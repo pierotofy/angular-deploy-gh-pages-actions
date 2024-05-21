@@ -76,7 +76,7 @@ exports.deployBuild = deployBuild;
 function installDeps() {
     return __awaiter(this, void 0, void 0, function* () {
         helpers_1.writeToConsole('Installing dependencies 🏃');
-        return yield helpers_1.execute('npm install');
+        return yield helpers_1.execute('npm install --legacy-peer-deps');
     });
 }
 exports.installDeps = installDeps;
